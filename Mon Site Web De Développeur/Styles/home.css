@@ -1,0 +1,124 @@
+*{box-sizing: border-box;}
+
+/*body*/
+body{
+  background-color: #0A122A;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/*container*/
+.container{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row-gap: 2%;
+}
+
+/*header*/
+header{
+  background-color: rgba(0,0,0,0.2);
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  border: solid 1px #fff;
+}
+header .logo{
+  width: 150px;
+  height: 100%;
+}
+header .logo img{
+  width: 100%;
+  height: 100%;
+}
+header .menu{
+  /*background-color: pink;*/
+  list-style: none;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: calc(100% - 150px);
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+header .menu a{
+  background-color: rgba(255,255,255,0.2);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #fff;
+  padding: 20px;
+  transition: padding .3s;
+}
+header .menu a:hover{
+  border-bottom: solid 4px #fff;
+  padding: 22px;
+  color: orange;
+}
+header .menu a.a{
+  border-bottom: solid 4px #fff;
+  padding: 22px;
+  color: orange;
+}
+
+/*slogan*/
+.slogan{
+  background-color: rgba(0,0,0,0.2);
+  text-align: center;
+  font-weight: bolder;
+  border: solid 1px #fff;
+}
+.slogan h1{
+  color: yellow;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+.slogan p{
+  color: #fff;
+  font-size: 1.3em;
+  font-family: 'Acme', sans-serif;
+  text-transform: capitalize;
+}
+
+/*services*/
+.services{
+  background-color: rgba(0,0,0,0.2);
+  display: grid;
+  grid-template-columns: 32.66% 32.66% 32.66%;
+  grid-column-gap: 1%;
+  grid-row-gap: 1%;
+  text-align: center;
+}
+.services > h1{
+  grid-column: 1/span 3;
+  grid-row: 1/1;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #fff;
+}
+.services .sites{
+  border: solid 1px #fff;
+}
+.services .sites h1{
+  color: orangered;
+}
+.services .sites p{
+  color: #fff;
+  font-family: 'Quando', serif;
+}
+
+/*footer*/
+footer{
+  background-color: rgba(0,0,0,0.2);
+  text-align: center;
+}
+footer p{
+  color: #fff;
+}
